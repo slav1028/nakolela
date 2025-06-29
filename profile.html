@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Профил | NaKolela</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
+    header { background-color: #2ecc71; padding: 16px 24px; color: white; display: flex; justify-content: space-between; align-items: center; }
+    nav a { margin-left: 20px; color: white; text-decoration: none; font-weight: bold; }
+    .profile-container { max-width: 800px; margin: 32px auto; background: white; padding: 24px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    .user-info { display: flex; align-items: center; gap: 24px; }
+    .user-info img { border-radius: 50%; width: 100px; height: 100px; object-fit: cover; }
+    .user-info h2 { margin: 0; }
+    .listings { margin-top: 32px; }
+    .listing { border: 1px solid #ddd; padding: 12px; border-radius: 8px; margin-bottom: 16px; }
+    .listing h3 { margin: 0; }
+    footer { text-align: center; padding: 24px; color: #aaa; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>NaKolela</strong></div>
+    <nav>
+      <a href="index.html">Начало</a>
+      <a href="listings.html">Обяви</a>
+      <a href="promo.html">Промо</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+  </header>
+
+  <div class="profile-container">
+    <div class="user-info">
+      <img src="1.jpg" alt="Потребител">
+      <div>
+        <h2>Иван Петров</h2>
+        <p>Град: София</p>
+        <p>Регистриран: март 2024</p>
+        <p>Рейтинг: ⭐⭐⭐⭐☆ (4.2)</p>
+      </div>
+    </div>
+
+    <div class="listings">
+      <h3>Обяви от Иван:</h3>
+      <div class="listing">
+        <h3>Honda CBR 500R</h3>
+        <p>Цена: 7 200 лв | София</p>
+      </div>
+      <div class="listing">
+        <h3>Cross GRX 500</h3>
+        <p>Цена: 1 300 лв | София</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 NaKolela. Всички права запазени.
+  </footer>
+</body>
+</html>
