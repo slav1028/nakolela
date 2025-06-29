@@ -1,34 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="bg">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Обяви | NaKolela</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #2ecc71;
+      padding: 16px 24px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 24px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .listing {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .listing img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .listing-info {
+      padding: 12px;
+    }
+    .listing-info h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .price {
+      font-weight: bold;
+      color: #27ae60;
+    }
+    .tag {
+      background-color: gold;
+      color: black;
+      font-weight: bold;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .listing-card {
+      position: relative;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Списък с обяви – NaKolela</h1>
+    <div><strong>NaKolela</strong></div>
     <nav>
-      <a href="index.html">Начало</a> |
-      <a href="listings.html">Обяви</a> |
-      <a href="promo.html">Промо</a> |
-      <a href="profile.html">Профил</a> |
+      <a href="index.html">Начало</a>
+      <a href="listings.html">Обяви</a>
+      <a href="promo.html">Промо</a>
       <a href="contacts.html">Контакти</a>
     </nav>
   </header>
+  <div class="container">
+    <h1>Обяви</h1>
+    <div class="grid">
+      <div class="listing">
+        <div class="listing-card">
+          <span class="tag">BEST</span>
+          <img src="1.jpg" alt="Motor">
+        </div>
+        <div class="listing-info">
+          <h3>Yamaha MT-07</h3>
+          <p class="price">8 700 лв.</p>
+        </div>
+      </div>
 
-  <main>
-    <section>
-      <article>
-        <h2>Honda CBR 600RR</h2>
-        <p>Цена: 9,500 лв | Град: София</p>
-      </article>
-      <article>
-        <h2>Cross GRX 500 (ел. велосипед)</h2>
-        <p>Цена: 1,800 лв | Град: Пловдив</p>
-      </article>
-    </section>
-  </main>
+      <div class="listing">
+        <img src="2.jpg" alt="Bike">
+        <div class="listing-info">
+          <h3>Cube Attention 29"</h3>
+          <p class="price">1 100 лв.</p>
+        </div>
+      </div>
+
+      <div class="listing">
+        <img src="3.jpg" alt="Scooter">
+        <div class="listing-info">
+          <h3>Xiaomi Electric Scooter</h3>
+          <p class="price">750 лв.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
+
