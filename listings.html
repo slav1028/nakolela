@@ -2,36 +2,10 @@
 <html lang="bg">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Обяви | NaKolela</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-    }
-    header {
-      background-color: #2ecc71;
-      padding: 16px 24px;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      margin-left: 20px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      padding: 24px;
-    }
-    h1 {
-      color: #2c3e50;
-    }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -87,37 +61,12 @@
       <a href="contacts.html">Контакти</a>
     </nav>
   </header>
-  <div class="container">
-    <h1>Обяви</h1>
-    <div class="grid">
-      <div class="listing">
-        <div class="listing-card">
-          <span class="tag">BEST</span>
-          <img src="1.jpg" alt="Motor">
-        </div>
-        <div class="listing-info">
-          <h3>Yamaha MT-07</h3>
-          <p class="price">8 700 лв.</p>
-        </div>
-      </div>
 
-      <div class="listing">
-        <img src="2.jpg" alt="Bike">
-        <div class="listing-info">
-          <h3>Cube Attention 29"</h3>
-          <p class="price">1 100 лв.</p>
-        </div>
-      </div>
+  <main class="container">
+    <h1>Всички обяви</h1>
+    <div class="grid" id="ads-container"></div>
+  </main>
 
-      <div class="listing">
-        <img src="3.jpg" alt="Scooter">
-        <div class="listing-info">
-          <h3>Xiaomi Electric Scooter</h3>
-          <p class="price">750 лв.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <script src="listings.js"></script>
 </body>
 </html>
-
