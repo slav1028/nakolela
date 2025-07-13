@@ -1,2 +1,1 @@
-// Listing detail page
-export default function Detail() { return <div>Detail View</div>; }
+// Страница с детайлна обява - placeholder

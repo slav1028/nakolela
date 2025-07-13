@@ -1,1 +1,1 @@
-module.exports = { reactStrictMode: true };
+// Конфигурация за Next.js

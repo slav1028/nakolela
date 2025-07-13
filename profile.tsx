@@ -1,2 +1,1 @@
-// Seller profile page
-export default function Profile() { return <div>Profile</div>; }
+// Профил на продавач - placeholder
