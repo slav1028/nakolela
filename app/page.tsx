@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>NaKolela – Начало</title>
+        <title>NaKolela – Начало 🚴</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
