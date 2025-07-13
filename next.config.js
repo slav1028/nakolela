@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  images: {
-    domains: ['localhost'], // Добави домейни тук ако използваш <Image src="...">
+  experimental: {
+    appDir: true, // ✅ това е задължително за App Router!
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
