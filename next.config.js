@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    appDir: true, // ✅ това е задължително за App Router!
+    appDir: true,
   },
 }
 
