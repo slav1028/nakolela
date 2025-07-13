@@ -18,6 +18,7 @@ interface Ad {
 
 export default function Listings() {
   const [ads, setAds] = useState<Ad[]>([])
+  const [filter, setFilter] = useState<'all' | 'vip' | 'color' | 'hot'>('all')
 
   useEffect(() => {
     fetch('/ads.json')
@@ -31,6 +32,11 @@ export default function Listings() {
         setAds(sorted)
       })
   }, [])
+
+  const filteredAds = ads.filter((ad) => {
+    if (filter === 'all') return true
+    return ad.promo?.[filter] === true
+  })
 
   return (
     <div>
@@ -46,8 +52,16 @@ export default function Listings() {
 
       <main className="container">
         <h1>Обяви</h1>
+
+        <div className="promo-filters">
+          <button onClick={() => setFilter('all')} className={filter === 'all' ? 'active' : ''}>Всички</button>
+          <button onClick={() => setFilter('vip')} className={filter === 'vip' ? 'active' : ''}>Само VIP</button>
+          <button onClick={() => setFilter('color')} className={filter === 'color' ? 'active' : ''}>С цветен фон</button>
+          <button onClick={() => setFilter('hot')} className={filter === 'hot' ? 'active' : ''}>Само Топ</button>
+        </div>
+
         <div className="grid">
-          {ads.map((ad) => (
+          {filteredAds.map((ad) => (
             <Link href={`/ads/${ad.id}`} key={ad.id}>
               <div
                 className={`listing-card ${ad.promo?.color ? 'promo-color' : ''} ${ad.promo?.vip ? 'promo-vip' : ''}`}
