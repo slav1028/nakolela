@@ -421,3 +421,11 @@ a {
 .promo-vip {
   border: 2px solid #f39c12;
 }
+
+.badge.hot {
+  background: red;
+  color: #fff;
+  top: 8px;
+  right: 8px;
+  left: auto;
+}
