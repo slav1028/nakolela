@@ -140,3 +140,31 @@
     "date": "вчера"
   }
 ]
+[
+  {
+    "id": 1,
+    "title": "Мотор Honda CB500",
+    "price": 6500,
+    "city": "София",
+    "year": 2022,
+    "category": "motor",
+    "brand": "Honda",
+    "model": "CB500",
+    "description": "Перфектно състояние",
+    "userId": 1,
+    "image": "/placeholder.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Велосипед Drag",
+    "price": 480,
+    "city": "Пловдив",
+    "year": 2020,
+    "category": "bike",
+    "brand": "Drag",
+    "model": "Hardtail",
+    "description": "Малко използван",
+    "userId": 2,
+    "image": "/placeholder.jpg"
+  }
+]
