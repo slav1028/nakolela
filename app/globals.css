@@ -323,3 +323,39 @@ a {
 .listing-form button:hover {
   background: #27ae60;
 }
+.ad-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ad-images img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.ad-info h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ad-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 8px;
+}
+
+.ad-description {
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+}
