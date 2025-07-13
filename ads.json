@@ -168,3 +168,13 @@
     "image": "/placeholder.jpg"
   }
 ]
+{
+  "id": 1,
+  "title": "Мотор Honda CB500",
+  "price": 6500,
+  "promo": {
+    "vip": true,
+    "color": true,
+    "hot": true
+  }
+}
