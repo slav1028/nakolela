@@ -453,3 +453,52 @@ a {
   margin-top: 10px;
   color: #2ecc71;
 }
+.promo-filters {
+  margin: 20px 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.promo-filters button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.promo-filters button.active,
+.promo-filters button:hover {
+  background: #2ecc71;
+  color: #fff;
+  border-color: #27ae60;
+}
+
+.promo-color {
+  background-color: #fffce6;
+}
+
+.promo-vip {
+  border: 2px solid #f39c12;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: gold;
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.badge.hot {
+  background: red;
+  color: white;
+  left: auto;
+  right: 8px;
+}
