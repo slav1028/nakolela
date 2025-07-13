@@ -280,3 +280,46 @@ a {
   font-size: 14px;
   color: #888;
 }
+.form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.form-wrapper h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.listing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.listing-form input,
+.listing-form select,
+.listing-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.listing-form button {
+  background: #2ecc71;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.listing-form button:hover {
+  background: #27ae60;
+}
