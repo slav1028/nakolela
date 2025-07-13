@@ -1,1 +1,36 @@
-body { font-family: Arial; }
+.detail-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.image-section {
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h1 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.description {
+  margin-top: 12px;
+  line-height: 1.6;
+}
