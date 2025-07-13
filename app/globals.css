@@ -429,3 +429,27 @@ a {
   right: 8px;
   left: auto;
 }
+.promo-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.promo-list li {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.promo-list h3 {
+  margin-bottom: 8px;
+}
+
+.promo-list strong {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2ecc71;
+}
