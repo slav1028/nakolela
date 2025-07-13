@@ -1,0 +1,1 @@
+<form className="register-form">Register</form>

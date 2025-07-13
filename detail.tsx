@@ -1,0 +1,1 @@
+<div className="detail">Детайли за обява</div>

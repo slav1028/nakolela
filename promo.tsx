@@ -1,0 +1,1 @@
+<div className="promo">Промо страница</div>

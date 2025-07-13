@@ -1,0 +1,1 @@
+<div className="listings">Списък с обяви</div>
