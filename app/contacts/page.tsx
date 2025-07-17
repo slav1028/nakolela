@@ -64,3 +64,37 @@ export default function Contacts() {
     </div>
   );
 }
+// app/contacts/page.tsx
+export default function ContactsPage() {
+  return (
+    <div style={{ padding: '24px' }}>
+      <h1>Контакти</h1>
+      <p>Имейл: <a href="mailto:contact@nakolela.io">contact@nakolela.io</a></p>
+      <p>Може да ни пишете за партньорства, обяви, или предложения.</p>
+      <form style={{ marginTop: '20px', maxWidth: '400px' }}>
+        <input placeholder="Име" style={inputStyle} />
+        <input placeholder="Имейл" style={inputStyle} />
+        <textarea placeholder="Съобщение" style={{ ...inputStyle, height: '100px' }} />
+        <button type="submit" style={buttonStyle}>Изпрати</button>
+      </form>
+    </div>
+  )
+}
+
+const inputStyle = {
+  display: 'block',
+  width: '100%',
+  padding: '10px',
+  marginBottom: '10px',
+  borderRadius: '6px',
+  border: '1px solid #ccc',
+}
+
+const buttonStyle = {
+  backgroundColor: '#2ecc71',
+  color: '#fff',
+  padding: '10px 20px',
+  border: 'none',
+  borderRadius: '6px',
+  cursor: 'pointer',
+}
