@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "title": "Планински велосипед",
+    "price": 850,
+    "currency": "лв.",
+    "location": "София",
+    "category": "Велосипеди",
+    "year": 2021,
+    "power": null,
+    "image": "bike1.jpg",
+    "badge": "VIP",
+    "used": true,
+    "date": "днес"
+  },
+  {
+    "id": 2,
+    "title": "Електрическа тротинетка",
+    "price": 1200,
+    "currency": "лв.",
+    "location": "Варна",
+    "category": "Тротинетки",
+    "year": 2022,
+    "power": "250W",
+    "image": "scooter1.jpg",
+    "badge": "TOP",
+    "used": true,
+    "date": "днес"
+  },
+  {
+    "id": 3,
+    "title": "Kawasaki Ninja 650",
+    "price": 9700,
+    "currency": "лв.",
+    "location": "Пловдив",
+    "category": "Мотоциклети",
+    "year": 2023,
+    "power": "649cc",
+    "image": "ninja650.jpg",
+    "badge": "TOP",
+    "used": true,
+    "date": "вчера"
+  },
+  {
+    "id": 4,
+    "title": "Каска / шлем",
+    "price": 120,
+    "currency": "лв.",
+    "location": "Русе",
+    "category": "Аксесоари и части",
+    "year": null,
+    "power": null,
+    "image": "helmet1.jpg",
+    "badge": null,
+    "used": true,
+    "date": "вчера"
+  },
+  {
+    "id": 5,
+    "title": "Градски велосипед",
+    "price": 650,
+    "currency": "лв.",
+    "location": "Бургас",
+    "category": "Велосипеди",
+    "year": 2020,
+    "power": null,
+    "image": "bike2.jpg",
+    "badge": null,
+    "used": true,
+    "date": "днес"
+  },
+  {
+    "id": 6,
+    "title": "Електрическа тротинетка Xiaomi",
+    "price": 800,
+    "currency": "лв.",
+    "location": "Стара Загора",
+    "category": "Тротинетки",
+    "year": 2023,
+    "power": "300W",
+    "image": "scooter2.jpg",
+    "badge": "BEST",
+    "used": false,
+    "date": "днес"
+  },
+  {
+    "id": 7,
+    "title": "Honda CBR 500R",
+    "price": 8900,
+    "currency": "лв.",
+    "location": "Видин",
+    "category": "Мотоциклети",
+    "year": 2021,
+    "power": "471cc",
+    "image": "motor1.jpg",
+    "badge": "VIP",
+    "used": true,
+    "date": "преди 3 дни"
+  },
+  {
+    "id": 8,
+    "title": "Гуми за мотор 17''",
+    "price": 180,
+    "currency": "лв.",
+    "location": "Плевен",
+    "category": "Аксесоари и части",
+    "year": null,
+    "power": null,
+    "image": "tires.jpg",
+    "badge": null,
+    "used": true,
+    "date": "днес"
+  },
+  {
+    "id": 9,
+    "title": "Детски велосипед",
+    "price": 350,
+    "currency": "лв.",
+    "location": "Хасково",
+    "category": "Велосипеди",
+    "year": 2022,
+    "power": null,
+    "image": "bike3.jpg",
+    "badge": null,
+    "used": true,
+    "date": "вчера"
+  },
+  {
+    "id": 10,
+    "title": "Механична тротинетка",
+    "price": 200,
+    "currency": "лв.",
+    "location": "Ямбол",
+    "category": "Тротинетки",
+    "year": 2020,
+    "power": null,
+    "image": "scooter3.jpg",
+    "badge": null,
+    "used": true,
+    "date": "вчера"
+  }
+]
+[
+  {
+    "id": 1,
+    "title": "Мотор Honda CB500",
+    "price": 6500,
+    "city": "София",
+    "year": 2022,
+    "category": "motor",
+    "brand": "Honda",
+    "model": "CB500",
+    "description": "Перфектно състояние",
+    "userId": 1,
+    "image": "/placeholder.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Велосипед Drag",
+    "price": 480,
+    "city": "Пловдив",
+    "year": 2020,
+    "category": "bike",
+    "brand": "Drag",
+    "model": "Hardtail",
+    "description": "Малко използван",
+    "userId": 2,
+    "image": "/placeholder.jpg"
+  }
+]
+{
+  "id": 1,
+  "title": "Мотор Honda CB500",
+  "price": 6500,
+  "promo": {
+    "vip": true,
+    "color": true,
+    "hot": true
+  }
+}
+[
+  {
+    "id": 1,
+    "title": "Yamaha MT-07",
+    "price": "8 700 лв.",
+    "image": "/1.jpg",
+    "userId": 101,
+    "promo": { "vip": true, "hot": true, "color": true }
+  },
+  {
+    "id": 2,
+    "title": "Cube Attention",
+    "price": "1 100 лв.",
+    "image": "/2.jpg",
+    "userId": 102,
+    "promo": { "color": true }
+  }
+]
