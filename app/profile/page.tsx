@@ -72,3 +72,45 @@ const ProfilePage = () => {
 };
 
 export default ProfilePage;
+// app/profile/[id]/page.tsx
+'use client'
+import { useEffect, useState } from 'react'
+import { useParams } from 'next/navigation'
+
+interface Ad {
+  id: number
+  title: string
+  price: string
+  image: string
+  userId: number
+}
+
+export default function ProfilePage() {
+  const { id } = useParams()
+  const [ads, setAds] = useState<Ad[]>([])
+
+  useEffect(() => {
+    fetch('/ads.json')
+      .then(res => res.json())
+      .then(data => {
+        const filtered = data.filter((ad: Ad) => ad.userId === parseInt(id as string))
+        setAds(filtered)
+      })
+  }, [id])
+
+  return (
+    <div style={{ padding: '24px' }}>
+      <h1>Профил на потребител #{id}</h1>
+      <h2>Неговите обяви:</h2>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '20px' }}>
+        {ads.map(ad => (
+          <div key={ad.id}>
+            <img src={ad.image} style={{ width: '100%', borderRadius: '8px' }} />
+            <h3>{ad.title}</h3>
+            <p style={{ color: '#2ecc71', fontWeight: 'bold' }}>{ad.price}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
