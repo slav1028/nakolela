@@ -178,3 +178,21 @@
     "hot": true
   }
 }
+[
+  {
+    "id": 1,
+    "title": "Yamaha MT-07",
+    "price": "8 700 лв.",
+    "image": "/1.jpg",
+    "userId": 101,
+    "promo": { "vip": true, "hot": true, "color": true }
+  },
+  {
+    "id": 2,
+    "title": "Cube Attention",
+    "price": "1 100 лв.",
+    "image": "/2.jpg",
+    "userId": 102,
+    "promo": { "color": true }
+  }
+]
