@@ -1,42 +1,66 @@
+// app/admin/page.tsx
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function AdminPanel() {
-  const [selectedId, setSelectedId] = useState('')
-  const [selectedPromo, setSelectedPromo] = useState('')
-  const [result, setResult] = useState<string | null>(null)
+  const [ads, setAds] = useState<any[]>([])
 
-  const handleApply = () => {
-    if (!selectedId || !selectedPromo) {
-      setResult('❌ Моля, попълнете и двете полета.')
-      return
-    }
+  useEffect(() => {
+    fetch('/ads.json')
+      .then((res) => res.json())
+      .then((data) => setAds(data))
+  }, [])
 
-    // Тук по-късно може да добавим API или базата
-    console.log('Маркирана обява:', selectedId, selectedPromo)
-    setResult(`✅ Обява #${selectedId} маркирана като ${selectedPromo.toUpperCase()}`)
+  const togglePromo = (id: number, type: 'vip' | 'color' | 'hot') => {
+    const updated = ads.map((ad) =>
+      ad.id === id
+        ? {
+            ...ad,
+            promo: { ...(ad.promo || {}), [type]: !(ad.promo?.[type] ?? false) },
+          }
+        : ad
+    )
+    setAds(updated)
+    alert(`Обява ${id} маркирана с ${type.toUpperCase()} ✅`)
   }
 
   return (
-    <div className="form-wrapper">
-      <h1>Админ: Маркирай обява като промо</h1>
-      <input
-        type="text"
-        placeholder="ID на обява"
-        value={selectedId}
-        onChange={(e) => setSelectedId(e.target.value)}
-      />
-
-      <select value={selectedPromo} onChange={(e) => setSelectedPromo(e.target.value)}>
-        <option value="">Избери промо</option>
-        <option value="vip">⭐ VIP</option>
-        <option value="color">🎨 Цветна</option>
-        <option value="hot">🔥 Топ</option>
-      </select>
-
-      <button onClick={handleApply}>Маркирай</button>
-
-      {result && <p style={{ marginTop: '20px' }}>{result}</p>}
+    <div style={{ padding: 32 }}>
+      <h1>Админ Панел</h1>
+      <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Заглавие</th>
+            <th>VIP</th>
+            <th>Цвят</th>
+            <th>Топ</th>
+          </tr>
+        </thead>
+        <tbody>
+          {ads.map((ad) => (
+            <tr key={ad.id}>
+              <td>{ad.id}</td>
+              <td>{ad.title}</td>
+              <td>
+                <button onClick={() => togglePromo(ad.id, 'vip')}>
+                  {ad.promo?.vip ? '✅' : '⬜️'}
+                </button>
+              </td>
+              <td>
+                <button onClick={() => togglePromo(ad.id, 'color')}>
+                  {ad.promo?.color ? '✅' : '⬜️'}
+                </button>
+              </td>
+              <td>
+                <button onClick={() => togglePromo(ad.id, 'hot')}>
+                  {ad.promo?.hot ? '✅' : '⬜️'}
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }
